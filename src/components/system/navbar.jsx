@@ -106,11 +106,6 @@ const Navbar = () => {
               <li>
                 <Link href="#contact" className="nav-link">Contact</Link>
               </li>
-              {user && (
-                <li>
-                  <Link href="/dashboard" className="nav-link">Dashboard</Link>
-                </li>
-              )}
             </ul>
 
             {/* CTA Buttons */}

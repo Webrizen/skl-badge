@@ -31,12 +31,12 @@ export default function Home() {
               No design skills needed – just upload, customize, and print.
             </p>
             <div className="mt-10 flex gap-4 justify-center lg:justify-start flex-wrap">
-              <Link href="/register" className="relative px-6 py-3 before:absolute before:inset-0 before:rounded-lg before:transition active:before:bg-indigo-700 text-white hover:before:bg-indigo-800 before:bg-indigo-600 hover:before:scale-105">
+              <Link href="/auth/sign-up" className="relative px-6 py-3 before:absolute before:inset-0 before:rounded-lg before:transition active:before:bg-indigo-700 text-white hover:before:bg-indigo-800 before:bg-indigo-600 hover:before:scale-105">
                 <span className="relative">
                   Create Free Account
                 </span>
               </Link>
-              <Link href="#demo" className="relative px-6 py-3 before:absolute before:inset-0 before:rounded-lg before:transition before:bg-zinc-100 dark:before:bg-zinc-900 text-indigo-600 dark:text-white hover:before:scale-105">
+              <Link href="/#demo" className="relative px-6 py-3 before:absolute before:inset-0 before:rounded-lg before:transition before:bg-zinc-100 dark:before:bg-zinc-900 text-indigo-600 dark:text-white hover:before:scale-105">
                 <span className="relative">
                   See Live Demo
                 </span>

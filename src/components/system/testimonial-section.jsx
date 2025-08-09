@@ -17,13 +17,13 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-24 bg-white dark:bg-gray-950">
+    <section className="py-24 bg-white dark:bg-zinc-950">
       <div className="container mx-auto px-6 space-y-16">
        <div className="space-y-4 max-w-2xl">
           <span className="text-indigo-600 dark:text-indigo-500 font-semibold pl-6 relative before:absolute before:top-1/2 before:left-0 before:w-5 before:h-px before:bg-indigo-600 dark:before:bg-indigo-500 before:rounded-full">
             Trusted Worldwide
           </span>
-          <h1 className="font-bold text-gray-800 dark:text-white text-3xl md:text-6xl">
+          <h1 className="font-bold text-zinc-800 dark:text-white text-3xl md:text-6xl">
             What Our <span className="text-indigo-600">Clients Say</span>
           </h1>
         </div>
@@ -39,7 +39,7 @@ const TestimonialSection = () => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="w-full aspect-[3/4] rounded-xl overflow-hidden relative bg-gray-50 dark:bg-gray-900"
+                  className="w-full aspect-[3/4] rounded-xl overflow-hidden relative bg-zinc-50 dark:bg-zinc-900"
                 >
                   <Image 
                     src={testimonials[currentIndex].image} 
@@ -71,9 +71,9 @@ const TestimonialSection = () => {
                     >
                       <path d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604C6.854 9.387 6.786 10.373 6.8 11.5H10c2.57 0 3.898-.921 4.627-2.874.729-1.953.216-4.492-1.519-5.714C12.162 2.399 11.203 2 10 2 6.353 2 3.785 3.402 1.923 5.346.06 7.29-.1 9.513.062 11.024.223 12.536.7 14 1.5 14c.828 0 1.5-1.343 1.5-3 0-.871-.232-1.708-.691-2.708zM14.5 21.5c0 .828-.672 1.5-1.5 1.5-.8 0-1.277-1.464-1.438-2.976-.162-1.511-.002-3.734 1.86-5.678C14.215 12.402 16.783 11 20.43 11h.57v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604-.509.792-.577 1.778-.563 2.905H20c2.57 0 3.898-.921 4.627-2.874.729-1.953.216-4.492-1.519-5.714C22.162 8.399 21.203 8 20 8c-3.647 0-6.215 1.402-8.077 3.346-.06.07-.119.141-.176.214.654.908 1.047 1.939 1.137 3.031.155 1.89-.438 3.627-1.553 4.641-.992.901-2.302 1.268-3.831 1.268H4.5c0 2.485 2.015 4.5 4.5 4.5 2.485 0 4.5-2.015 4.5-4.5h1.5z" />
                     </svg>
-                    <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                      {testimonials[currentIndex].quote}
-                    </p>
+                   <p className="text-lg lg:text-xl text-zinc-700 dark:text-zinc-200 leading-relaxed">
+  {testimonials[currentIndex].quote}
+</p>
                   </div>
                 </motion.div>
 
@@ -84,7 +84,7 @@ const TestimonialSection = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
-                    className="flex items-center gap-4 pt-4 border-t border-gray-100 dark:border-gray-800"
+                    className="flex items-center gap-4 pt-4 border-t border-zinc-100 dark:border-zinc-800"
                   >
                     <Image 
                       src={testimonials[currentIndex].image} 
@@ -94,12 +94,13 @@ const TestimonialSection = () => {
                       className="w-12 h-12 rounded-full flex md:hidden object-cover"
                     />
                     <div className="space-y-0.5">
-                      <h2 className="text-lg font-normal text-gray-900 dark:text-gray-100">
+                      <h2 className="text-lg font-normal text-zinc-900 dark:text-zinc-100">
                         {testimonials[currentIndex].name}
                       </h2>
-                      <p className="text-gray-500 dark:text-gray-400 text-sm">
-                        {testimonials[currentIndex].role}
-                      </p>
+                      <p className="text-zinc-600 dark:text-zinc-300 text-sm">
+  {testimonials[currentIndex].role}
+</p>
+
                     </div>
                   </motion.div>
                 </AnimatePresence>
@@ -107,24 +108,24 @@ const TestimonialSection = () => {
 
               {/* Navigation */}
               <div className="flex items-center justify-between pt-4">
-                <div className="text-sm text-gray-400 dark:text-gray-500">
-                  <span className="text-indigo-500 dark:text-indigo-400">
-                    {currentIndex + 1}
-                  </span>
-                  <span> / {testimonials.length}</span>
-                </div>
+               <div className="text-sm text-zinc-500 dark:text-zinc-400">
+  <span className="text-indigo-600 dark:text-indigo-400">
+    {currentIndex + 1}
+  </span>
+  <span> / {testimonials.length}</span>
+</div>
                 <div className="flex gap-2">
                   <button 
                     onClick={prevTestimonial}
                     aria-label="Previous testimonial"
-                    className="p-2 rounded-full text-gray-500 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+                    className="p-2 rounded-full text-zinc-500 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800"
                   >
                     <ChevronLeft className="w-5 h-5" />
                   </button>
                   <button 
                     onClick={nextTestimonial}
                     aria-label="Next testimonial"
-                    className="p-2 rounded-full text-gray-500 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+                    className="p-2 rounded-full text-zinc-500 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800"
                   >
                     <ChevronRight className="w-5 h-5" />
                   </button>
