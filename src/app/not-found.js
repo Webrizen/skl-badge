@@ -22,7 +22,7 @@ export default function NotFound() {
           <div className="container mx-auto py-10 lg:py-16">
             <div className="max-w-2xl text-center mx-auto">
               <p className="text-muted-foreground">
-                Oops! You’ve wandered off...
+                  Oops! You&apos;ve wandered off...
               </p>
               {/* Title */}
               <div className="mt-5 max-w-2xl">
@@ -33,7 +33,7 @@ export default function NotFound() {
               {/* End Title */}
               <div className="mt-5 max-w-3xl">
                 <p className="text-xl text-muted-foreground">
-                  Looks like the page you're looking for doesn't exist. It might
+                  Looks like the page you&apos;re looking for doesn&apos;t exist. It might
                   have been moved, deleted, or you took a wrong turn on the
                   internet highway.
                 </p>

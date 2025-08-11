@@ -35,7 +35,7 @@ export default function Error({ error, reset }) {
               <div className="mt-5 max-w-3xl">
                 <p className="text-xl text-muted-foreground">
                   An unexpected error occurred. The error gremlin got a bit too
-                  excited. Don't worry, we're on it!
+                  excited. Don&apos;t worry, we&apos;re on it!
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground italic">
                   Error details: {error?.message || "Unknown error"}

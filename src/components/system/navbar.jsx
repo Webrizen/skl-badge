@@ -42,7 +42,7 @@ const Navbar = () => {
     )
 
     return () => subscription?.unsubscribe()
-  }, [router, pathname])
+  }, [router, pathname, supabase.auth])
 
   const handleLogout = async () => {
     try {
